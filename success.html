@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome kit link -->
+    <script src="https://kit.fontawesome.com/a1ce8c8c06.js" crossorigin="anonymous"></script>
+    <title>Sarah K Adams | UX Design </title>
+</head>
+<!-- Scrollspy automatically updates navbar links when scrolling-->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand home" href="index.html">SARAH K ADAMS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="jumbotron  text-center">
+            <div class="row container sent">
+                <div class="col-lg-10 col-md-8 col-sm-6">
+                    <br>
+                    <div>
+                        <h1><strong>Your message was sent.</strong></h1>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <img class="img-responsive img-thumbnail" src="img/contact-message-thmb.jpg" alt="person using laptop">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center sent">
+            <br>
+            <div>
+                <h3>Thanks for getting in touch with us.</h3>
+                <h3>We will review your message and get back with you shortly.</h3>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <a href="index.html">
+                        <button class="btn btn-default " type="submit">Go Home</button></a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container-fluid connect bg-grey">
+            <h2 class="text-center">Let's Connect</h2>
+
+            <div class="container">
+
+                <!-- Social buttons -->
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/sarah-adams-6487aa16/" target="_blank"
+                            class="btn-floating btn-li mx-1">
+                            <i class="fab fa-linkedin"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/labmandala" target="_blank" class="btn-floating btn-fb mx-1">
+                            <i class="fab fa-instagram"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/Labmandala" target="_blank" class="btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.github.com/labmandala" target="_blank" class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-github-square"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://codepen.io/labmandala" target="_blank" class="btn-floating btn-dribbble mx-1">
+                            <i class="fab fa-codepen"> </i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end Social buttons -->
+
+            </div>
+    </main>
+
+    </div><!-- end Container for Contact Section -->
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+
+    <!-- jQuery to add smooth scrolling (when clicking on the links in the navbar) -->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            // Animation effect which will slide in elements on scroll
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
+
+</html>

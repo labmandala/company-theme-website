@@ -1,0 +1,18 @@
+<!-- jQuery to add link from project page back to #portfolio section of html-->
+<script>
+    $(document).ready(function () {
+        $(window).on("load", function () {
+            // First, make sure we're on the index page. All others can skip this.
+            if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+                // so we're on the index page. Any index processing can happen here.
+                //   For our use, we want to get the hash (if we have one) and trim off the leading hash:
+                if (window.location.hash) {
+                    let mySection = window.location.hash.substring(1); // start at the SECOND char to the end
+
+                    // now, we want to trigger the proper link:
+                    $(`a[data-section='${mySection}']`).trigger("click");
+                }
+            }
+        });
+    })
+</script>
