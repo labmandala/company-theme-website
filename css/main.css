@@ -1,24 +1,24 @@
 /******* General Styles *******/
 
 body {
-    font: 400 15px Lato, sans-serif;
+    font: 400 16px Lato, sans-serif; /* 15px */
     line-height: 1.8;
     color: #303030;
   /*  overflow-x: hidden; */
   }
   h2 {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px */
   }
   h4 {
-    font-size: 19px;
+    font-size: 1.1875em; /* 19px */
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem; /* 30px */
   }  
   span {
     font-weight: bold;
@@ -28,33 +28,33 @@ body {
   .jumbotron {
    /* background-color: #818181;
     color: #fff; */
-    padding: 100px 25px;
+    padding: 6.25em 1.5625em; /* 100px 25px;*/
     font-family: Montserrat, sans-serif;
     margin: auto; /* fixed offset in main homepage area (or set to 0) */
   }
   .container-fluid {
-    padding: 60px 50px; /* */
+    padding: 3.75em 3.125em; /* 60px 50px */
   }
   .bg-grey {
     background-color: #f6f6f6;
   }
   .logo-small {
     color: #303030;
-    font-size: 50px;
+    font-size: 3.125em; /*50px; */
   }
   .logo {
     color: #8e8f8e;
-    font-size: 180px; /* from 200px*/
+    font-size: 11.25em; /* 180px; from 200px*/
   }
   .thumbnail {
-    padding: 0 0 15px 0;
+    padding: 0 0 0.9375em 0; /* 15px */
     border: none;
     border-radius: 0;
   }
   .thumbnail img {
     width: 100%;
     height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.635em; /* 10px;*/
   }
   .carousel-control.right, .carousel-control.left {
     background-image: none;
@@ -67,11 +67,11 @@ body {
     background-color: #643351;
   }
   .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
+    font-size: 1.1875em; /* 19px;*/
+    line-height: 1.375rem;
     font-weight: 400;
     font-style: italic;
-    margin: 70px 0;
+    margin: 4.375rem 0; /*70px 0;*/
   }
   .item span {
     font-style: normal;
