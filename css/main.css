@@ -92,7 +92,7 @@ body {
   .panel-heading {
     color: #fff !important;
     background-color: #303030 !important;
-    padding: 25px;
+    padding: 1.1em; /* 1.5625em; = 25px;*/
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -103,14 +103,14 @@ body {
     background-color: white !important;
   }
   .panel-footer h3 {
-    font-size: 27px;
+    font-size: 1.6875em; /* 27px; */
   }
   .panel-footer h4 {
     color: #aaa;
-    font-size: 14px;
+    font-size: 0.875em; /* 14px;*/
   }
   .panel-footer .btn {
-    margin: 15px 0;
+    margin: 1em 0; /* 15px 0;*/
     background-color: #303030;
     color: #fff;
   }
