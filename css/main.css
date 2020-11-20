@@ -80,6 +80,7 @@ body {
     border: 1px solid #303030; 
     border-radius:0 !important;
     transition: box-shadow 0.5s;
+    margin-bottom: 3em;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -107,7 +108,7 @@ body {
   }
   .panel-footer h4 {
     color: #aaa;
-    font-size: 0.875em; /* 1.07em = 14px;*/
+    font-size: 0.9em; /* 1.07em = 14px;*/
   }
   .panel-footer .btn {
     margin: 1em 0; /* 15px 0;*/
