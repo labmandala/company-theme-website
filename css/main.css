@@ -236,6 +236,11 @@ body {
   }
 
   .icon-list img {
+    width: 3em;
+    height: auto;
+  }
+
+  .icon-list-accel img {
     width: 5em;
     height: auto;
   }
