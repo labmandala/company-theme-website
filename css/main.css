@@ -78,7 +78,7 @@ body {
   }
   .panel {
     border: 1px solid #303030; 
-    border-radius:0 !important;
+    border-radius:5px !important;
     transition: box-shadow 0.5s;
     margin-bottom: 3em;
   }
@@ -93,7 +93,7 @@ body {
   .panel-heading {
     color: #fff !important;
     background-color: #303030 !important;
-    padding: 1.1em; /* 1.666em; = 25px;*/
+    padding: .7em; /* 1.666em; = 25px;*/
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -114,6 +114,13 @@ body {
     margin: 1em 0; /* 15px 0;*/
     background-color: #303030;
     color: #fff;
+  }
+  .panel-body .thumbnail {
+    margin: 0;
+    padding: 0;
+  }
+  .panel-footer h4 {
+    margin-bottom: 0.5em;
   }
   .navbar {
     margin-bottom: 0;
