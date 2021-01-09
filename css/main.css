@@ -147,6 +147,9 @@ body {
     border-color: transparent;
     color: #fff !important;
   }
+  .tech-list {
+    font-size: 3.5em;
+  }
   footer .glyphicon {
     font-size: 1.4em; /* 20px; */
     margin-bottom: 1.4em; /* 20px; */
