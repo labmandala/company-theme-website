@@ -15,17 +15,15 @@ let hide = function() {
 view.addEventListener('click', open);
 close.addEventListener('click', hide);
 
-// Write your code here
-
 // changes the text in the view element
 function textChange(){
-    view.innerHTML = 'Hello, World';
+    view.innerHTML = 'Expanded';
 }
   
 // change the text of the view element variable back to 
 // 'View', the original text for the view element
 function textReturn(){
-  view.innerHTML = 'View';
+  view.innerHTML = 'View More';
 }
   
 // assign textChange as an event handler function to a 
