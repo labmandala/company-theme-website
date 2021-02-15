@@ -265,6 +265,12 @@ body {
     height: auto;
   }
 
+  .part-heading {
+    font-size: 1.85em;
+    color: gray;
+    text-transform: none;
+  }
+
   /*** Media Queries ***/
 
   @media screen and (max-width: 768px) {
