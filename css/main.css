@@ -84,6 +84,7 @@ body {
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    opacity: 0.85;
   }
   .panel-footer .btn:hover {
     border: 1px solid #303030;
@@ -124,6 +125,9 @@ body {
   }
   .panel-footer h4 {
     margin-bottom: 0.5em;
+  }
+  a .panel {
+    color: #303030;
   }
   .navbar {
     margin-bottom: 0;
