@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome kit link -->
+    <script src="https://kit.fontawesome.com/a1ce8c8c06.js" crossorigin="anonymous"></script>
+    <title>Travel Adventure | Portfolio</title>
+</head>
+<!-- Scrollspy automatically updates navbar links when scrolling-->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand home" href="../index.html">SARAH K ADAMS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../index.html">WORK</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container (Project Section) -->
+    <section class="container">
+
+        <div class="container-fluid about">
+            <h1><strong>Travel Adventure | React JS Development</strong></h1>
+            <br><br>
+            <div>
+                <img class="img-responsive img-thumbnail" src="../img/travel-adventure/travel-page-banner.jpg"
+                    alt="adventurous image background">
+            </div>
+        </div>
+
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Overview</h3>
+                    <br>
+                    <p>A React JS website built from scratch using mainly React Hooks and React Router. The website is fully responsive across screen sizes with an attractive dark theme, reusable card components, and can easily be customized with animated background for header and throughout the interface.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3>Features</h3>
+                    <br>
+                    <ul>
+                        <li>Efficient and pleasant User Interface</li>
+                        <li>Reusable components throughout code</li>
+                        <li>Hover and animation effects, card links</li>
+                        <li>Responsive format on different devices</li>
+                    </ul>
+                </div>
+            </div><br>
+        </div>
+
+        <br>
+
+    </section>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid connect bg-grey">
+        <h2 class="text-center">Let's Connect</h2>
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/sarah-k-adams" target="_blank" class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="mailto:hi@sarahkadams.com" target="_blank" class="btn-floating btn-dribbble mx-1">
+                    <i class="far fa-envelope"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.github.com/labmandala" target="_blank" class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-github-square"> </i>
+                </a>
+            </li>
+        </ul>
+    </div><!-- end Container for Contact Section -->
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+
+    <!-- jQuery to add smooth scrolling (when clicking on the links in the navbar) -->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            // Animation effect which will slide in elements on scroll
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
+
+</html>
